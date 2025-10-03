@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatelessWidget {
   final List<Map<String, String>> recipes = [
     {
-      'name': 'Pizza',
+      'name': 'lasanga',
       'ingredients': 'Flour, Cheese, Tomato',
       'instructions': 'Bake for 20 mins',
       'image': 'assets/images/pizza.png',
