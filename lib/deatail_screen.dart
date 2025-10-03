@@ -19,6 +19,8 @@ class _DetailsScreenState extends State<DetailsScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            Image.asset(recipe['image']!, height: 200),
+            SizedBox(height: 20),
             Text("Ingredients: ${recipe['ingredients']}"),
             SizedBox(height: 10),
             Text("Instructions: ${recipe['instructions']}"),
