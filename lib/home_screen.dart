@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatelessWidget {
   final List<Map<String, String>> recipes = [
     {
-      'name': 'lasanga',
+      'name': 'Pizza',
       'ingredients': 'Flour, Cheese, Tomato',
       'instructions': 'Bake for 20 mins',
       'image': 'assets/images/pizza.png',
@@ -25,30 +25,34 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Recipe Book')),
+      appBar: AppBar(title: const Text('Recipe Book')),
       body: ListView.builder(
         itemCount: recipes.length,
         itemBuilder: (context, index) {
-          return ListTile(
-            leading: Image.asset(
-              recipes[index]['image']!,
-              width: 50,
-              height: 50,
-              fit: BoxFit.cover,
+          return Card(
+            margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            child: ListTile(
+              leading: Image.asset(
+                recipes[index]['image']!,
+                width: 50,
+                height: 50,
+                fit: BoxFit.cover,
+              ),
+              title: Text(recipes[index]['name']!),
+              subtitle: Text(recipes[index]['ingredients']!),
+              onTap: () {
+                Navigator.pushNamed(
+                  context,
+                  '/details',
+                  arguments: recipes[index],
+                );
+              },
             ),
-            title: Text(recipes[index]['name']!),
-            onTap: () {
-              Navigator.pushNamed(
-                context,
-                '/details',
-                arguments: recipes[index],
-              );
-            },
           );
         },
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.favorite),
+        child: const Icon(Icons.favorite),
         onPressed: () {
           Navigator.pushNamed(context, '/favorites');
         },
