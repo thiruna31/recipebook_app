@@ -28,7 +28,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: 'Recipe Book',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 104, 55, 187)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 243, 12, 12)),
       ),
       home: HomeScreen(),
       routes: {
