@@ -16,12 +16,12 @@ class FavoritesScreen extends StatelessWidget {
               itemBuilder: (context, index) {
                 final recipe = favorites[index];
                 return Card(
-                  margin: EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                  margin: EdgeInsets.symmetric(horizontal: 13, vertical: 7),
                   child: ListTile(
                     leading: Image.asset(
                       recipe['image']!,
-                      width: 50,
-                      height: 50,
+                      width: 52,
+                      height: 52,
                       fit: BoxFit.cover,
                     ),
                     title: Text(recipe['name']!),

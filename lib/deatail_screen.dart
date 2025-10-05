@@ -22,29 +22,29 @@ class DetailsScreen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 child: Image.asset(
                   recipe['image']!,
-                  height: 200,
+                  height: 220,
                   fit: BoxFit.cover,
                 ),
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 22),
             Text(
               recipe['name']!,
-              style: const TextStyle(fontSize: 26, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
             ),
-            const SizedBox(height: 16),
+            const SizedBox(height: 18),
             const Text(
               "Ingredients:",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
             ),
-            Text(recipe['ingredients']!, style: const TextStyle(fontSize: 16)),
-            const SizedBox(height: 16),
+            Text(recipe['ingredients']!, style: const TextStyle(fontSize: 18)),
+            const SizedBox(height: 18),
             const Text(
               "Instructions:",
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
             ),
-            Text(recipe['instructions']!, style: const TextStyle(fontSize: 16)),
-            const SizedBox(height: 30),
+            Text(recipe['instructions']!, style: const TextStyle(fontSize: 18)),
+            const SizedBox(height: 32),
             Center(
               child: ElevatedButton.icon(
                 onPressed: () {
@@ -57,11 +57,11 @@ class DetailsScreen extends StatelessWidget {
                     ),
                   );
                 },
-                icon: const Icon(Icons.favorite, color: Color.fromARGB(255, 249, 64, 51)),
+                icon: const Icon(Icons.favorite, color: Color.fromARGB(255, 246, 58, 44)),
                 label: const Text("Add to Favorites"),
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(
-                      horizontal: 24, vertical: 12),
+                      horizontal: 25, vertical: 13),
                 ),
               ),
             ),

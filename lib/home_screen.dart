@@ -4,20 +4,20 @@ class HomeScreen extends StatelessWidget {
   final List<Map<String, String>> recipes = [
     {
       'name': 'Pizza',
-      'ingredients': 'Flour, Cheese, Tomato',
-      'instructions': 'Bake for 20 mins',
+      'ingredients': 'Red sauce, Flour, Cheese, Tomato, chilli flakes',
+      'instructions': 'Bake for 25 minutes',
       'image': 'assets/images/pizza.png',
     },
     {
       'name': 'Pasta',
-      'ingredients': 'Pasta, Sauce, Cheese',
-      'instructions': 'Boil and mix',
+      'ingredients': 'vegetables, Pasta, Sauce, Cheese',
+      'instructions': 'Boil properly served within 15 minutes',
       'image': 'assets/images/pasta.png',
     },
     {
       'name': 'Cake',
-      'ingredients': 'Flour, Sugar, Eggs',
-      'instructions': 'Bake for 30 mins',
+      'ingredients': 'Flour, Sugar, Eggs, creams, flavors',
+      'instructions': 'Bake for 35 minutes',
       'image': 'assets/images/cake.png',
     },
   ];
